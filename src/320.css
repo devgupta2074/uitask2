@@ -554,7 +554,8 @@
   }
   .section-pricing-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem 6rem;
   }
   .section-pricing {
     margin: 1rem 1rem;
@@ -570,13 +571,96 @@
   .section-pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 6rem;
   }
   .services-section {
     margin: 1rem 3rem;
     padding: 0;
   }
+  .element {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a202c;
+    outline: none;
+
+    background-color: #fff;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #edf2f7;
+  }
 }
 @media (min-width: 800px) {
+  .element {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a202c;
+    outline: none;
+
+    background-color: #fff;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #edf2f7;
+  }
+  /* py-2.5 px-16 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none
+   bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 
+   focus:z-10 focus:ring-4 focus:ring-gray-100 */
+
+  .element:hover {
+    background-color: #f7fafc;
+    color: #727a84;
+  }
+
+  .element:focus {
+    z-index: 10;
+    box-shadow: 10px 0 5px 2px rgba(48, 49, 50, 0.5);
+    box-shadow: 10px 0 0 2px #8c9195;
+  }
+
+  .container-tagging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  .tagging-buttons {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .tagging-image {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .section-tagging {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(249, 248, 254);
+  }
+  .tagging-header {
+    font-family: Montserrat;
+    letter-spacing: -0.05rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
   .tagging-image::before {
     padding: 5rem 5rem;
   }
