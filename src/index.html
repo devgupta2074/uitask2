@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BloomField Homes">
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       type="module"
@@ -14,8 +15,8 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <link rel="stylesheet" href="/src/320.css" />
-    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/320.css" defer />
+ 
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+Display:ital@0;1&display=swap");
@@ -39,7 +40,7 @@
           <div>SIGN IN/REGISTER | WARRANTY</div>
         </div>
         <div class="nav-container">
-          <a>
+          <a href="#">
             <div class="logo-block"></div>
             <img
               class="company-logo"
@@ -49,7 +50,7 @@
           </a>
           <div class="nav-question">
             <div
-              class="flex flex-row items-center justify-center gap-0 p-0 m-0"
+              class="april-block"
               id="rectangle"
             >
               <img class="april-image" src="/public/assets/april-2.jpg" />
@@ -83,7 +84,7 @@
           <li><a href="#">PAYMENT PORTAL</a></li>
         </ul>
       </nav>
-      <button class="btn-mobile-nav">
+      <button name="nav-button" class="btn-mobile-nav">
         <ion-icon
           id="open-btn"
           class="icon-mobile-nav"
@@ -99,21 +100,21 @@
     <main>
       <section>
         <div class="hero-image">
-          <img src="/public/assets/eat.webp" />
+          <img class="main-image" src="/public/assets/eat.webp" alt="Main Hero Image EAT"  />
         </div>
       </section>
       <section class="ai-container">
         <div class="ai-grid">
           <div class="ai-image-section">
             <div class="ai-gear-image">
-              <img src="/public/assets/gear.png" />
+              <img src="/public/assets/gear.png" alt="gear icon" />
             </div>
 
             <div class="ai-neural-image">
-              <img src="/public/assets/neural-layer.png" />
+              <img src="/public/assets/neural-layer.png" alt="neural layer" />
             </div>
             <div class="ai-graph-image">
-              <img src="/public/assets/graphstructure.png" />
+              <img src="/public/assets/graphstructure.png" alt="graph structure" />
             </div>
           </div>
           <div class="ai-heading -orderx">
@@ -128,18 +129,18 @@
         <div class="ai-grid">
           <div class="ai-image-section">
             <div class="ai-gear-image ai-like-image">
-              <img width="100" src="/public/assets/like.png" />
+              <img  src="/public/assets/like.png" alt="like icon" />
             </div>
             <div class="ai-neural-image">
               <img
                 class="heart-image gridx"
-                width="200"
-                src="/public/assets/heart.png"
+                
+                src="/public/assets/heart.png " alt="heart icon"
               />
             </div>
 
             <div class="ai-graph-image ai-tick-image">
-              <img width="100" src="/public/assets/tick.png" />
+              <img width="100" src="/public/assets/tick.png" alt="tick icon" />
             </div>
           </div>
           <div class="ai-heading">
@@ -170,12 +171,12 @@
         </div>
         <div class="tagging-grid">
           <div class="tagging-buttons">
-            <button type="button" class="element">Dress</button>
+            <button name="Dress" type="button" class="element">Dress</button>
 
-            <button type="button" class="element">A-Line</button>
-            <button type="button" class="element">Wrap</button>
-            <button type="button" class="element">LightBlue</button>
-            <button type="button" class="element">V-neck</button>
+            <button name="A-line" type="button" class="element">A-Line</button>
+            <button name="Wrap" type="button" class="element">Wrap</button>
+            <button name="lightblue" type="button" class="element">LightBlue</button>
+            <button name="V-neck" type="button" class="element">V-neck</button>
           </div>
 
           <div class="tagging-image">
@@ -185,11 +186,11 @@
             <img src="/public/assets/screw.png" alt=" Golden Screw Image" />
           </div>
           <div class="tagging-buttons">
-            <button type="button" class="element">Screw</button>
+            <button name="screw" type="button" class="element">Screw</button>
 
-            <button type="button" class="element">TwinFast</button>
-            <button type="button" class="element">Zinc Plated</button>
-            <button type="button" class="element">Flat head</button>
+            <button name="Twinfast" type="button" class="element">TwinFast</button>
+            <button name="ZincPlated" type="button" class="element">Zinc Plated</button>
+            <button name="flathead" type="button" class="element">Flat head</button>
           </div>
         </div>
       </section>
@@ -241,7 +242,7 @@
           </div>
         </div>
         <div class="service-box service-box--gradient-dark">
-          <img width="50" src="/public/assets/reading.png" />
+          <img width="50" src="/public/assets/reading.png" alt="person reading book" />
           <div class="service-box-info">
             <p class="service-box-heading">Full Customer Satisfaction</p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
@@ -292,7 +293,7 @@
                 </li>
               </ul>
               <div class="plan-book-now">
-                <button class="button-book-now">BOOK NOW</button>
+                <button name="Book Now" class="button-book-now">BOOK NOW</button>
               </div>
             </div>
           </div>
@@ -340,7 +341,7 @@
                 </li>
               </ul>
               <div class="plan-book-now">
-                <button class="button-book-now">BOOK NOW</button>
+                <button name="Book Now" class="button-book-now">BOOK NOW</button>
               </div>
             </div>
           </div>
@@ -391,7 +392,7 @@
                 </li>
               </ul>
               <div class="plan-book-now">
-                <button class="button-book-now">BOOK NOW</button>
+                <button name="Book Now" class="button-book-now">BOOK NOW</button>
               </div>
             </div>
           </div>
@@ -404,10 +405,10 @@
         <div class="terms-condition">Terms of Use / Privacy Policy</div>
       </div>
       <div class="footer-links">
-        <a>About /</a>
-        <a>Features /</a>
-        <a>FAQs /</a>
-        <a>Contact</a>
+        <a href="#">About /</a>
+        <a href="#">Features /</a>
+        <a href="#">FAQs /</a>
+        <a href="#">Contact</a>
       </div>
     </footer>
   </body>
