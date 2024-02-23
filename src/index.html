@@ -8,11 +8,15 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script src="../js/script.js" defer></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <link rel="stylesheet" href="320.css" />
     <link rel="stylesheet" href="input.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+Display:ital@0;1&display=swap");
     </style>
@@ -20,69 +24,99 @@
     <title>Bloomfield Homes | New Homes in Dallas Fort Worth, Texas</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="top-nav">
-        <div class="social-logos">
-          <p>Follow</p>
-          <ion-icon class="icon" name="logo-facebook"></ion-icon>
-          <ion-icon class="icon" name="logo-twitter"></ion-icon>
-          <ion-icon class="icon" name="logo-pinterest"></ion-icon>
-          <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-          <ion-icon class="icon" name="logo-youtube"></ion-icon>
-          <ion-icon class="icon" name="logo-instagram"></ion-icon>
-        </div>
-        <div>SIGN IN/REGISTER | WARRANTY</div>
-      </div>
-      <div class="nav-container grid grid-cols-3 gap-5 items-center">
-        <a>
-          <div class="logo-block"></div>
-          <img
-            src="https://media.bloomfieldhomes.com/328/2023/9/13/logo-horizontal.png?width=400&fit=bounds&height=89"
-            alt="logo"
-          />
-        </a>
-        <div class="nav-question">
-          <div
-            class="flex flex-row items-center justify-center gap-0 p-0 m-0"
-            id="rectangle"
-          >
-            <img width="100" height="100" src="../public/assets/april-2.jpg" />
-            <div
-              class="text-2xl font-semibold tracking-tighter flex items-center flex-col justify-center"
-            >
-              <p class="text-blue-900 font-serif">HAVE QUESTIONS?</p>
-              <p class="text-white">ASK APRIL</p>
-            </div>
+    <header class="header-burger" id="header">
+      <nav class="nav">
+        <div class="top-nav">
+          <div class="social-logos">
+            <p>Follow</p>
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+            <ion-icon class="icon" name="logo-pinterest"></ion-icon>
+            <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+            <ion-icon class="icon" name="logo-youtube"></ion-icon>
+            <ion-icon class="icon" name="logo-instagram"></ion-icon>
           </div>
-          <div id="triangle-right"></div>
+          <div>SIGN IN/REGISTER | WARRANTY</div>
+        </div>
+        <div class="nav-container">
+          <a>
+            <div class="logo-block"></div>
+            <img
+              class="company-logo"
+              src="../public/assets/company_logo.png"
+              alt="logo"
+            />
+          </a>
+          <div class="nav-question">
+            <div
+              class="flex flex-row items-center justify-center gap-0 p-0 m-0"
+              id="rectangle"
+            >
+              <img class="april-image" src="../public/assets/april-2.jpg" />
+              <div class="april-question">
+                <p class="have-question">HAVE QUESTIONS?</p>
+                <p class="ask-april">ASK APRIL</p>
+              </div>
+            </div>
+            <div id="triangle-right"></div>
+          </div>
+
+          <div class="social-logos">
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+            <ion-icon class="icon" name="logo-pinterest"></ion-icon>
+            <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+            <ion-icon class="icon" name="logo-youtube"></ion-icon>
+            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+          </div>
         </div>
 
-        <div class="social-logos2">
-          <ion-icon class="icon" name="logo-facebook"></ion-icon>
-          <ion-icon class="icon" name="logo-twitter"></ion-icon>
-          <ion-icon class="icon" name="logo-pinterest"></ion-icon>
-          <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-          <ion-icon class="icon" name="logo-youtube"></ion-icon>
-          <ion-icon class="icon" name="logo-instagram"></ion-icon>
-        </div>
-      </div>
-      <div class="nav-links">
-        <a>LOCATIONS</a>
-        <a>AVAILABLE HOMES</a><a>FLOOR PLANS</a><a>VIRTUAL TOURS</a
-        ><a>GALLERY</a><a>TESTIMONIALS</a> <a>ABOUT</a><a>CONTACT</a>
-        <a>PAYMENT PORTAL</a>
-      </div>
-    </nav>
-
+        <ul class="nav-links nav-bottom">
+          <li><a href="#">LOCATIONS</a></li>
+          <li><a href="#">AVAILABLE HOMES</a></li>
+          <li><a href="#">FLOORPLANS</a></li>
+          <li><a href="#">VIRTUAL TOOLS</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">PAYMENT PORTAL</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon
+          id="open-btn"
+          class="icon-mobile-nav"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          id="close-btn"
+          class="icon-mobile-nav"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+    </header>
     <main>
       <section>
-        <div>
+        <div class="hero-image">
           <img src="../public/assets/eat.webp" />
         </div>
       </section>
-      <section class="container m-10 p-10">
-        <div class="grid grid-cols-2">
-          <div class="p-5">
+      <section class="ai-container">
+        <div class="ai-grid">
+          <div class="ai-image-section">
+            <div class="ai-gear-image">
+              <img src="../public/assets/gear.png" />
+            </div>
+
+            <div class="ai-neural-image">
+              <img src="../public/assets/neural-layer.png" />
+            </div>
+            <div class="ai-graph-image">
+              <img src="../public/assets/graphstructure.png" />
+            </div>
+          </div>
+          <div class="ai-heading -orderx">
             <h2 class="ai-info">ARTIFICIAL NEURAL NETWORKS</h2>
             <div class="ai-content">
               Neural network based solutions including Densely Connected Neural
@@ -90,31 +124,13 @@
               Neural Networks (RNNs) to power advanced intelligence.
             </div>
           </div>
-          <div class="flex flex-col items-start">
-            <div
-              class="bg-white absolute rounded-2xl shadow-lg p-1 mt-[5rem] ml-[0rem]"
-            >
-              <img width="100" src="../public/assets/gear.png" />
-            </div>
-
-            <div class="shadow-2xl p-10 m-14 rounded-2xl bg-white">
-              <img width="200" src="../public/assets/neural-layer.png" />
-            </div>
-            <div
-              class="bg-white absolute rounded-2xl mt-[10rem] ml-[18rem] shadow-lg p-3"
-            >
-              <img width="100" src="../public/assets/graphstructure.png" />
-            </div>
-          </div>
         </div>
-        <div class="grid grid-cols-2">
-          <div class="flex flex-col items-start p-2">
-            <div
-              class="bg-white z-10 absolute rounded-2xl shadow-lg p-1 mt-[5rem] ml-[0rem]"
-            >
+        <div class="ai-grid">
+          <div class="ai-image-section">
+            <div class="ai-gear-image ai-like-image">
               <img width="100" src="../public/assets/like.png" />
             </div>
-            <div class="shadow-2xl p-10 m-14 rounded-2xl">
+            <div class="ai-neural-image">
               <img
                 class="heart-image gridx"
                 width="200"
@@ -122,13 +138,11 @@
               />
             </div>
 
-            <div
-              class="bg-white z-10 absolute rounded-2xl mt-[9rem] ml-[18rem] shadow-lg p-3"
-            >
+            <div class="ai-graph-image ai-tick-image">
               <img width="100" src="../public/assets/tick.png" />
             </div>
           </div>
-          <div class="p-5">
+          <div class="ai-heading">
             <h2 class="ai-info">RECOMMENDER SYSTEMS</h2>
             <div class="ai-content">
               Enable personalized recommendations for your customers by
@@ -139,96 +153,43 @@
         </div>
       </section>
       <section class="section-tagging">
-        <div
-          class="flex flex-col justify-center items-center container-tagging pb-20"
-        >
+        <div class="container-tagging">
           <h3 class="tagging-header">AI-Assited Tagging</h3>
-          <p
-            class="flex flex-col justify-center items-center flex-wrap max-w-[890px] whitespace-nowrap overflow-hidden text-ellipsis"
-          >
+          <p class="">
             Using Deep Learning techniques, we train models to identify
             products, categorize them, and generate highly-strucutred
           </p>
-          <p
-            class="flex-wrap max-w-[890px] whitespace-nowrap overflow-hidden text-ellipsis"
-          >
+          <p class="">
             tags to populate your catalog. This makes it easier for you or your
             customers to filter and find items, keep product
           </p>
-          <p
-            class="flex-wrap max-w-[890px] whitespace-nowrap overflow-hidden text-ellipsis"
-          >
+          <p class="">
             information easily accessible and quickly distribute product feeds
             through different
           </p>
         </div>
-        <div class="grid grid-cols-4 gap-10">
-          <div class="flex flex-col">
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Dress
-            </button>
+        <div class="tagging-grid">
+          <div class="tagging-buttons">
+            <button type="button" class="element">Dress</button>
 
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              A-Line
-            </button>
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Wrap
-            </button>
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Light Blue
-            </button>
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              V-neck
-            </button>
+            <button type="button" class="element">A-Line</button>
+            <button type="button" class="element">Wrap</button>
+            <button type="button" class="element">LightBlue</button>
+            <button type="button" class="element">V-neck</button>
           </div>
 
-          <div class="bg-white m-2 p-10 shadow-lg rounded-lg">
+          <div class="tagging-image">
             <img class="" src="../public/assets/dress.png" />
           </div>
-          <div class="bg-white m-2 p-10 shadow-lg rounded-lg">
+          <div class="tagging-image">
             <img src="../public/assets/screw.png" />
           </div>
-          <div class="flex flex-col">
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Screw
-            </button>
+          <div class="tagging-buttons">
+            <button type="button" class="element">Screw</button>
 
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              TwinFast
-            </button>
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Zinc Plated
-            </button>
-            <button
-              type="button"
-              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-            >
-              Flat head
-            </button>
+            <button type="button" class="element">TwinFast</button>
+            <button type="button" class="element">Zinc Plated</button>
+            <button type="button" class="element">Flat head</button>
           </div>
         </div>
       </section>
@@ -243,7 +204,7 @@
           <div class="service-box service-box--gradient-blue">
             <img width="50" src="../public/assets/book-svgrepo-com.svg" />
             <div class="service-box-info">
-              <header class="service-box-heading">25+ Languages</header>
+              <p class="service-box-heading">25+ Languages</p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
               alias vel iure, rerum deleniti pariatur porro qui sequi debitis
               illum doloribus ducimus, iste fuga at dolorum optio eum ut
@@ -253,11 +214,11 @@
           </div>
         </div>
 
-        <div>
+        <div class="two-service">
           <div class="service-box service-box--gradient-red">
             <img width="50" src="../public/assets/books.png" />
             <div class="service-box-info">
-              <header class="service-box-heading">32+ Categories</header>
+              <p class="service-box-heading">32+ Categories</p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
               alias vel iure, rerum deleniti.
               <div class="service-box-readmore">Read More..</div>
@@ -270,7 +231,7 @@
               <img width="50" src="../public/assets/social-media.png" />
             </div>
             <div class="service-box-info">
-              <header class="service-box-heading">On Social Networks</header>
+              <p class="service-box-heading">On Social Networks</p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
               alias vel iure, rerum deleniti pariatur porro qui sequi debitis
               illum doloribus ducimus, iste fuga at dolorum optio eum ut
@@ -282,9 +243,7 @@
         <div class="service-box service-box--gradient-dark">
           <img width="50" src="../public/assets/reading.png" />
           <div class="service-box-info">
-            <header class="service-box-heading">
-              Full Customer Satisfaction
-            </header>
+            <p class="service-box-heading">Full Customer Satisfaction</p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
             alias vel iure, rerum deleniti pariatur porro qui sequi debitis
             <div class="service-box-readmore">Read More..</div>
@@ -297,13 +256,13 @@
           <span class="subheading">Membership</span>
         </div>
 
-        <div class="grid grid-cols-3">
-          <div class="pricing-plan pricing-plan--starter">
-            <header class="plan-header">
+        <div class="section-pricing-grid">
+          <div class="pricing-plan pricing-plan--day-pass">
+            <div class="plan-header">
               <h4 class="plan-header-heading">Day Pass</h4>
               <h5 class="plan-header-subheading">Give it a Try</h5>
-            </header>
-            <div class="p-5">
+            </div>
+            <div class="ai-heading">
               <p class="plan-price">
                 <span>$</span>19 <span class="plan-per-day">Per Day</span>
               </p>
@@ -329,111 +288,112 @@
                     class="list-icon"
                     name="checkmark-outline"
                   ></ion-icon>
-                  <span class="line-through">No Lockers</span>
+                  <span class="line-through text-gray-500">No Lockers</span>
                 </li>
               </ul>
-              <div class="plan-sing-up">
-                <a href="#" class="btn btn--full">Start eating well</a>
+              <div class="plan-book-now">
+                <button class="button-book-now">BOOK NOW</button>
               </div>
             </div>
           </div>
 
-          <div class="pricing-plan pricing-plan--complete">
-            <header class="plan-header">
-              <h4>Day Pass</h4>
-              <h5>Give it a Try</h5>
-            </header>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span><strong>2 meals</strong> per day</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Order <strong>24/7</strong></span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Delivery is free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Get access to latest recipes</span>
-              </li>
-            </ul>
-            <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+          <div class="pricing-plan pricing-plan--shared-desk">
+            <div class="plan-header plan-header--shared">
+              <h4 class="plan-header-heading">Shared Desk</h4>
+              <h5 class="plan-header-subheading">Economical but Flexible</h5>
+            </div>
+            <div class="ai-heading">
+              <p class="plan-price">
+                <span>$</span>99 <span class="plan-per-day">Monthly</span>
+              </p>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>8am to 8pm Access</span>
+                </li>
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>100 Hours of Superfast Wi-Fi</span>
+                </li>
+
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Lockers Access</span>
+                </li>
+                <li class="list-item"></li>
+
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span class="line-through text-gray-500">No Printers</span>
+                </li>
+              </ul>
+              <div class="plan-book-now">
+                <button class="button-book-now">BOOK NOW</button>
+              </div>
             </div>
           </div>
-          <div class="pricing-plan pricing-plan--complete">
-            <header class="plan-header">
-              <p class="plan-name">Complete</p>
-              <p class="plan-price"><span>$</span>649</p>
-              <p class="plan-text">per month. That's just $11 per meal!</p>
-            </header>
-            <ul class="list">
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span><strong>2 meals</strong> per day</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Order <strong>24/7</strong></span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Delivery is free</span>
-              </li>
-              <li class="list-item">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Get access to latest recipes</span>
-              </li>
-            </ul>
-            <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+          <div class="pricing-plan pricing-plan--flexible-desk">
+            <div class="plan-header plan-header--flexible">
+              <h4 class="plan-header-heading">Flexible Desk</h4>
+              <h5 class="plan-header-subheading">Any Desk, Any Chair</h5>
             </div>
-          </div>
-        </div>
-
-        <div class="container grid">
-          <aside class="plan-details">
-            Prices include all applicable taxes. You can cancel at any time.
-            Both plans include the following:
-          </aside>
-        </div>
-
-        <div class="container grid grid--4-cols">
-          <div class="feature">
-            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-            <p class="feature-title">Never cook again!</p>
-            <p class="feature-text">
-              Our subscriptions cover 365 days per year, even including major
-              holidays.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
-            <p class="feature-title">Local and organic</p>
-            <p class="feature-text">
-              Our cooks only use local, fresh, and organic products to prepare
-              your meals.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
-            <p class="feature-title">No waste</p>
-            <p class="feature-text">
-              All our partners only use reusable containers to package all your
-              meals.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
-            <p class="feature-title">Pause anytime</p>
-            <p class="feature-text">
-              Going on vacation? Just pause your subscription, and we refund
-              unused days.
-            </p>
+            <div class="ai-heading">
+              <p class="plan-price">
+                <span>$</span>149 <span class="plan-per-day">Monthly</span>
+              </p>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>200 Hours of WiFi per Month</span>
+                </li>
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Lockers Access</span>
+                </li>
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>50 pages Printers</span>
+                </li>
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>5hrs Skype Booth</span>
+                </li>
+                <li class="list-item border-b-2">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Mailing Address</span>
+                </li>
+              </ul>
+              <div class="plan-book-now">
+                <button class="button-book-now">BOOK NOW</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
